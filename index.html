@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff0f5" />
+    <meta
+      name="description"
+      content="A little pink birthday surprise, made with love."
+    />
+    <title>Happy Birthday, My Love! 💗</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+    <div class="sparkle-field" aria-hidden="true">
+      <span>✦</span><span>♡</span><span>✧</span><span>♡</span><span>✦</span>
+      <span>✧</span><span>♡</span><span>✦</span><span>♡</span><span>✧</span>
+    </div>
+
+    <!-- First screen / welcome -->
+    <section class="welcome-screen" id="welcomeScreen" aria-labelledby="welcomeTitle">
+      <div class="welcome-card">
+        <div class="tiny-crown" aria-hidden="true">♕</div>
+        <p class="eyebrow">A LITTLE SURPRISE FOR SOMEONE SPECIAL</p>
+        <h1 id="welcomeTitle">Hey, birthday girl<span>!</span></h1>
+        <p class="welcome-copy">
+          I made a tiny world of pink, wishes, and love just for you.
+          Ready to open your surprise?
+        </p>
+        <button class="primary-button" id="openSurpriseButton" type="button">
+          Open your surprise <span aria-hidden="true">♡</span>
+        </button>
+        <p class="made-with-love">made with a little extra love <span>♥</span></p>
+      </div>
+      <div class="welcome-flower flower-left" aria-hidden="true">✿</div>
+      <div class="welcome-flower flower-right" aria-hidden="true">✿</div>
+    </section>
+
+    <!-- Main birthday experience -->
+    <main class="birthday-page" id="birthdayPage" aria-hidden="true">
+      <header class="top-line">
+        <span class="top-heart" aria-hidden="true">♥</span>
+        <span>A DAY AS LOVELY AS YOU</span>
+        <span class="top-heart" aria-hidden="true">♥</span>
+      </header>
+
+      <section class="birthday-content" aria-labelledby="birthdayTitle">
+        <p class="eyebrow">TODAY IS ALL ABOUT YOU</p>
+        <h2 id="birthdayTitle">Happy Birthday,<br /><em>my beautiful girl</em></h2>
+        <p class="intro-text">
+          May your day be filled with soft smiles, warm hugs, sweet moments,
+          and all the happiness your heart can hold.
+        </p>
+
+        <div class="cake-scene">
+          <div class="cake-glow" aria-hidden="true"></div>
+          <div class="cake-sparkle sparkle-a" aria-hidden="true">✧</div>
+          <div class="cake-sparkle sparkle-b" aria-hidden="true">✦</div>
+          <div class="cake-sparkle sparkle-c" aria-hidden="true">♡</div>
+
+          <div class="cake" aria-label="A pink birthday cake with one candle">
+            <div class="candle-wrap">
+              <div class="flame" id="candleFlame" aria-hidden="true"></div>
+              <button
+                class="candle"
+                id="candleButton"
+                type="button"
+                aria-label="Blow out the birthday candle"
+                title="Tap to blow out the candle"
+              >
+                <span class="candle-stripe"></span>
+                <span class="wick"></span>
+              </button>
+              <span class="smoke" id="candleSmoke" aria-hidden="true"></span>
+            </div>
+            <div class="cake-top">
+              <span class="frosting-drip drip-one"></span>
+              <span class="frosting-drip drip-two"></span>
+              <span class="frosting-drip drip-three"></span>
+              <span class="cake-berry berry-one"></span>
+              <span class="cake-berry berry-two"></span>
+              <span class="cake-berry berry-three"></span>
+              <span class="cake-flower flower-cake-one">✿</span>
+              <span class="cake-flower flower-cake-two">✿</span>
+            </div>
+            <div class="cake-middle">
+              <span class="icing-wave"></span>
+              <span class="cake-heart heart-one">♥</span>
+              <span class="cake-heart heart-two">♥</span>
+              <span class="cake-heart heart-three">♥</span>
+            </div>
+            <div class="cake-bottom">
+              <span class="icing-wave bottom-wave"></span>
+              <span class="cake-dot dot-one"></span>
+              <span class="cake-dot dot-two"></span>
+              <span class="cake-dot dot-three"></span>
+              <span class="cake-dot dot-four"></span>
+              <span class="cake-dot dot-five"></span>
+            </div>
+          </div>
+          <div class="cake-plate"></div>
+          <div class="cake-shadow"></div>
+        </div>
+
+        <p class="candle-hint" id="candleHint">
+          <span class="hint-sparkle" aria-hidden="true">✧</span>
+          Close your eyes, make a wish, and tap the candle
+          <span class="hint-sparkle" aria-hidden="true">✧</span>
+        </p>
+
+        <section class="wish-reveal" id="wishReveal" aria-live="polite" hidden>
+          <p class="wish-kicker">YOUR WISH IS ON ITS WAY ✨</p>
+          <h3>May every little dream<br />find its way to you.</h3>
+          <p>You deserve a lifetime of beautiful things. Happy birthday, sweetheart! 💗</p>
+          <button class="letter-button" id="openLetterButton" type="button">
+            A little letter for you <span aria-hidden="true">💌</span>
+          </button>
+        </section>
+
+        <button class="replay-button" id="replayButton" type="button" hidden>
+          Celebrate again ↻
+        </button>
+      </section>
+
+      <footer class="page-footer">
+        <span>wrapped in pink</span>
+        <span class="footer-heart" aria-hidden="true">♥</span>
+        <span>and made with love</span>
+      </footer>
+    </main>
+
+    <!-- Love letter modal -->
+    <div class="letter-backdrop" id="letterBackdrop" hidden>
+      <section
+        class="letter-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="letterTitle"
+      >
+        <button class="close-letter" id="closeLetterButton" type="button" aria-label="Close letter">
+          ×
+        </button>
+        <div class="letter-decoration" aria-hidden="true">♡</div>
+        <p class="letter-eyebrow">JUST FOR YOU</p>
+        <h2 id="letterTitle">To my favorite person,</h2>
+        <div class="letter-body">
+          <p>
+            Happy birthday, my love. I hope you know how special you are—not
+            just today, but every single day.
+          </p>
+          <p>
+            Your smile makes ordinary moments feel magical, and having you in
+            my life gives me a thousand little reasons to be happy. I wish I
+            could wrap all the love I feel for you into one big hug.
+          </p>
+          <p>
+            May this new chapter bring you peace, confidence, exciting dreams,
+            and countless reasons to smile. Never forget how loved and
+            wonderful you are.
+          </p>
+          <p class="letter-last-line">Keep shining, birthday girl. Today and always. ✨</p>
+        </div>
+        <p class="letter-signoff">With all my love, <span>someone who adores you</span> ♥</p>
+        <div class="letter-bottom-flower" aria-hidden="true">✿</div>
+      </section>
+    </div>
+
+    <div class="celebration-layer" id="celebrationLayer" aria-hidden="true"></div>
+    <div class="screen-reader-only" id="announcement" aria-live="assertive"></div>
+  </body>
+</html>
